@@ -251,7 +251,7 @@ dl.gloss dd{font-size:.95rem}
 footer .srcs{margin:0;padding-left:1.2em;display:grid;gap:4px}
 /* Saxman card */
 .sx-fig{margin:4px 0 2px;display:grid;gap:6px}
-.sx-fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--rule);display:block}
+.sx-fig img{width:100%;max-width:100%;height:auto;aspect-ratio:1600/906;border-radius:8px;border:1px solid var(--rule);display:block}
 .sx-fig figcaption{font-size:.86rem;color:var(--muted)}
 .sx{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:2px}
 .sx-k{background:var(--ground);border:1px solid var(--rule);border-radius:8px;padding:12px 14px;display:grid;gap:8px;align-content:start;font-family:var(--f-display)}
@@ -301,7 +301,8 @@ footer .srcs{margin:0;padding-left:1.2em;display:grid;gap:4px}
 .ph4 p{font-family:var(--f-body);font-size:.95rem}
 .vmaps{display:grid;gap:18px}
 .vmap{margin:0;display:grid;gap:6px}
-.vmap img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--rule)}
+.vmap picture,.sx-fig picture,.zwrap{display:block;max-width:100%}
+.vmap img{width:100%;max-width:100%;height:auto;aspect-ratio:1600/680;display:block;border-radius:8px;border:1px solid var(--rule)}
 .vmap figcaption{font-size:.92rem;max-width:80ch}
 .vgrid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;align-items:start}
 .vgrid>div{display:grid;gap:8px;align-content:start}
@@ -533,15 +534,15 @@ footer{border-top:1px solid var(--rule);padding-top:22px;display:grid;gap:10px;f
     <p class="col">These are the near-term projects DOT&amp;PF says could start construction as early as 2028. They repair the corridor. They don't replace the viaducts.</p>
     <div class="vmaps">
       <figure class="vmap">
-        <picture><source media="(max-width:640px)" srcset="images/viaduct-project-1-900.jpg"><img src="images/viaduct-project-1-1600.jpg" width="1600" height="680" alt="DOT&amp;PF map of Project 1 on the Tongass Avenue and Water Street corridor: pavement resurfacing in green at the north end of Tongass Avenue, near Schoenbar Road and at the tunnel, and spot crack repair in red along most of Tongass Avenue and Water Street." loading="lazy" decoding="async" data-full="images/viaduct-project-1-full.jpg" class="zoomable"></picture>
+        <img src="images/viaduct-project-1-1600.jpg" srcset="images/viaduct-project-1-900.jpg 900w, images/viaduct-project-1-1600.jpg 1600w" sizes="(max-width:640px) 100vw, 1040px" width="1600" height="680" alt="DOT&amp;PF map of Project 1 on the Tongass Avenue and Water Street corridor: pavement resurfacing in green at the north end of Tongass Avenue, near Schoenbar Road and at the tunnel, and spot crack repair in red along most of Tongass Avenue and Water Street." decoding="async" data-full="images/viaduct-project-1-full.jpg" class="zoomable">
         <figcaption><b>Project 1: Pavement repairs.</b> Resurfacing (green) at the north end of Tongass Avenue, near Schoenbar Road and at the tunnel, with spot crack repair (red) along most of the rest. DOT&amp;PF says the S-curve repairs near Schoenbar will be done under Project 3.</figcaption>
       </figure>
       <figure class="vmap">
-        <picture><source media="(max-width:640px)" srcset="images/viaduct-project-2-900.jpg"><img src="images/viaduct-project-2-1600.jpg" width="1600" height="680" alt="DOT&amp;PF map of Project 2: viaduct and bridge spot repairs in teal at the north end of Tongass Avenue, near Bauer Way and at the tunnel end of Water Street, and general viaduct maintenance in red along the Tongass Avenue and Water Street viaduct sections." loading="lazy" decoding="async" data-full="images/viaduct-project-2-full.jpg" class="zoomable"></picture>
+        <img src="images/viaduct-project-2-1600.jpg" srcset="images/viaduct-project-2-900.jpg 900w, images/viaduct-project-2-1600.jpg 1600w" sizes="(max-width:640px) 100vw, 1040px" width="1600" height="680" alt="DOT&amp;PF map of Project 2: viaduct and bridge spot repairs in teal at the north end of Tongass Avenue, near Bauer Way and at the tunnel end of Water Street, and general viaduct maintenance in red along the Tongass Avenue and Water Street viaduct sections." decoding="async" data-full="images/viaduct-project-2-full.jpg" class="zoomable">
         <figcaption><b>Project 2: Structure repairs.</b> Spot repairs (teal) at the north end of Tongass Avenue, near Bauer Way and at the tunnel, plus general maintenance (red) along both viaduct sections. DOT&amp;PF says this is to "prevent unexpected closures until the structures are replaced."</figcaption>
       </figure>
       <figure class="vmap">
-        <picture><source media="(max-width:640px)" srcset="images/viaduct-project-3-900.jpg"><img src="images/viaduct-project-3-1600.jpg" width="1600" height="680" alt="DOT&amp;PF map of Project 3 between Chapman Street and Schoenbar Road: culvert replacement, removal of an abandoned viaduct structure, sidewalk and wheelchair ramp improvements, and permanent pavement improvements around the S-curve." loading="lazy" decoding="async" data-full="images/viaduct-project-3-full.jpg" class="zoomable"></picture>
+        <img src="images/viaduct-project-3-1600.jpg" srcset="images/viaduct-project-3-900.jpg 900w, images/viaduct-project-3-1600.jpg 1600w" sizes="(max-width:640px) 100vw, 1040px" width="1600" height="680" alt="DOT&amp;PF map of Project 3 between Chapman Street and Schoenbar Road: culvert replacement, removal of an abandoned viaduct structure, sidewalk and wheelchair ramp improvements, and permanent pavement improvements around the S-curve." decoding="async" data-full="images/viaduct-project-3-full.jpg" class="zoomable">
         <figcaption><b>Project 3: Jim Creek culvert and structure removal.</b> The S-curve between Chapman Street and Schoenbar Road: a larger Jim Creek culvert to reduce flooding, removal of an abandoned viaduct structure, new sidewalks and wheelchair ramps, and permanent repaving.</figcaption>
       </figure>
     </div>
@@ -669,7 +670,7 @@ footer{border-top:1px solid var(--rule);padding-top:22px;display:grid;gap:10px;f
       <h3>A new ferry terminal at Saxman Seaport, and its price has grown</h3>
       <p>The draft sets aside $25.8 million, mostly from a federal rural ferry grant, to move the M/V Lituya's Ketchikan landing to Saxman Seaport. DOT&amp;PF says it's carrying out the ferry system's 2045 long-range plan (V6-187). Saxman has wanted a terminal since a 1997 joint resolution with the Metlakatla Indian Community.</p>
       <figure class="sx-fig">
-        <picture><source media="(max-width:640px)" srcset="images/saxman-concept-3-900.jpg"><img src="images/saxman-concept-3-1600.jpg" width="1600" height="906" alt="Aerial photo of Saxman Seaport with PND Engineers' Concept 3 drawn over it: the M/V Lituya moored at a new berth inside the breakwater, a 140-foot transfer bridge to shore, a terminal building, loading lanes, and parking beside the Three Bears and Ace stores." loading="lazy" decoding="async" data-full="images/saxman-concept-3-full.jpg" class="zoomable"></picture>
+        <img src="images/saxman-concept-3-1600.jpg" srcset="images/saxman-concept-3-900.jpg 900w, images/saxman-concept-3-1600.jpg 1600w" sizes="(max-width:640px) 100vw, 1040px" width="1600" height="906" alt="Aerial photo of Saxman Seaport with PND Engineers' Concept 3 drawn over it: the M/V Lituya moored at a new berth inside the breakwater, a 140-foot transfer bridge to shore, a terminal building, loading lanes, and parking beside the Three Bears and Ace stores." decoding="async" data-full="images/saxman-concept-3-full.jpg" class="zoomable">
         <figcaption>Where the dock would go: PND Engineers' Concept 3 at Saxman Seaport, showing the Lituya berthed inside the existing breakwater, the 140-foot transfer bridge, the 24×36-foot terminal building and the parking lot shared with Three Bears. The preferred Concept 3A uses the same layout but swaps in a floating berth. From the July 2023 <i>South Tongass Highway Ferry Terminal Concept Scoping Report</i> (PDF page 16, drawing sheet 6 of 7).</figcaption>
       </figure>
       <div class="sx">
@@ -1041,7 +1042,14 @@ footer{border-top:1px solid var(--rule);padding-top:22px;display:grid;gap:10px;f
   (function(){
     var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),sc=document.getElementById('lb-scroll'),cap=document.getElementById('lb-cap'),hint=document.getElementById('lb-hint'),last=null;
     document.querySelectorAll('img.zoomable').forEach(function(img){
-      var pic=img.parentNode;var w=document.createElement('span');w.className='zwrap';pic.parentNode.insertBefore(w,pic);w.appendChild(pic);
+      img.addEventListener('error',function(){
+        if(img.dataset.fb)return;
+        img.dataset.fb='1';
+        img.removeAttribute('srcset');
+        img.src=img.getAttribute('src');
+      });
+      var node=img.parentNode&&img.parentNode.tagName==='PICTURE'?img.parentNode:img;
+      var w=document.createElement('span');w.className='zwrap';node.parentNode.insertBefore(w,node);w.appendChild(node);
       var b=document.createElement('button');b.type='button';b.className='zbadge';b.textContent='Enlarge';b.setAttribute('aria-label','Enlarge image: '+img.alt.slice(0,60));w.appendChild(b);
       var open=function(){last=b;li.src=img.getAttribute('data-full')||img.currentSrc||img.src;li.alt=img.alt;var fc=img.closest('figure');cap.textContent=fc&&fc.querySelector('figcaption')?fc.querySelector('figcaption').textContent:'';sc.classList.remove('z');hint.textContent='Tap the image to zoom in';lb.hidden=false;document.documentElement.style.overflow='hidden';document.getElementById('lb-x').focus()};
       img.addEventListener('click',open);b.addEventListener('click',open);
